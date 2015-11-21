@@ -1,12 +1,6 @@
 
 
-#About Me
-
-
-***
-
-
-## Who am i?
+### Who am i?
 
     Name: Jinkai.Xu
 
@@ -14,18 +8,18 @@
 
 
 
-## Hobby
+### Hobby
 
     Swimming、Guitar.
 
 
 
-## Statement
+### Statement
 
     Writing tech blog just for learning more
 
 
-## Powered
+### Powered
 
     Github Gollum Markdown
 
