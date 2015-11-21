@@ -1,3 +1,9 @@
+
+
+##Markdown: Basics （快速入门） / ([点击查看完整语法说明](./Markdown))
+
+***
+
 << [访问 Wow!Ubuntu](http://wowubuntu.com)
 
 **声明：** 这份文档派生(fork)于[繁体中文版](http://markdown.tw/)，在此基础上进行了繁体转简体工作，并进行了适当的润色。此文档用 Markdown 语法编写，你可以到这里[查看它的源文件][src1]。「繁体中文版的原始文件可以[查看这里][src]」--By @[riku][t]
@@ -10,11 +16,10 @@
 [g]: http://gitcafe.com/riku/Markdown-Syntax-CN
 [GitCafe]: http://gitcafe.com/riku/Markdown-Syntax-CN/
 
-Markdown: Basics （快速入门） / ([点击查看完整语法说明](./Markdown))
-==========================
+***
 
-Getting the Gist of Markdown's Formatting Syntax
-------------------------------------------------
+###Getting the Gist of Markdown's Formatting Syntax
+
 
 此页提供了 Markdown 的简单概念， [语法说明][s] 页提供了完整详细的文档，说明了每项功能。但是 Markdown 其实很简单就可以上手，此页文档提供了一些范例，并且每个范例都会提供输出的 HTML 结果。
 
