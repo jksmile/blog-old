@@ -57,38 +57,38 @@ security-constraint从字面上的意思就是说强制安全的意思，其实�
 
 ###\<security-constraint>元素包括四大块
 
-#### 1.\<display-name> <br />
-    1.字面的意思是展示的名称，其实就是一个应用名称，没什么实质作用，可以理解为一个标识备注。<br />
-    2.\<display-name> 元素可以有\<web-app>、\<security-constraint>、\<servlet>、\<filter>这些元素节点下使用 <br />
-    3.\<display-name> 值并不唯一，所以在web.xml里可以设置相同的值。<br />
+#### 1.\<display-name>
+1.字面的意思是展示的名称，其实就是一个应用名称，没什么实质作用，可以理解为一个标识备注。<br />
+2.\<display-name> 元素可以有\<web-app>、\<security-constraint>、\<servlet>、\<filter>这些元素节点下使用 <br />
+3.\<display-name> 值并不唯一，所以在web.xml里可以设置相同的值。<br />
 
-####2.\<web-resource-collection><br />
-    1.字面的意思是网站资源集合,些元素是用来确定需要保护的资源，在<security-constraint>元素节点下，至少包含一个 <br />
-    2.\<web-resource-collection>元素节点。 															 <br />
-    3.\<web-resource-collection>一般包括以下几个节点元素：                                             <br />
+####2.\<web-resource-collection>
+1.字面的意思是网站资源集合,些元素是用来确定需要保护的资源，在<security-constraint>元素节点下，至少包含一个 <br />
+2.\<web-resource-collection>元素节点。 															 <br />
+3.\<web-resource-collection>一般包括以下几个节点元素：                                             <br />
 
-       	<web-resource-name>
-        网站资源名称
+	<web-resource-name>
+	网站资源名称
 
-        <description>
-        资源描述
+	<description>
+	资源描述
 
-        <url-pattern>
-        URL模式，配置要保护的URL的规则，仅限于直接访问资源的URL，通过RequestDispatcher访问不受限 【*.JSP, *.CSS等等】
+	<url-pattern>
+	URL模式，配置要保护的URL的规则，仅限于直接访问资源的URL，通过RequestDispatcher访问不受限 【*.JSP, *.CSS等等】
 
-        <http-method>
-        受保护的HTTP请求方法，如缺省表示保护所有方法【GET,POST,PUT,HEAD,TRACE,DELETE,OPTIONS】
+	<http-method>
+	受保护的HTTP请求方法，如缺省表示保护所有方法【GET,POST,PUT,HEAD,TRACE,DELETE,OPTIONS】
 
 
-####3.\<auth-constraint><br />
-    1.字面上的意思是强迫认证，\<auth-constraint>元素会指出哪些角色会有上述受保护的资源的访问权限<br />
-    2.此元素下包括两节点元素：<br />
+####3.\<auth-constraint>
+1.字面上的意思是强迫认证，\<auth-constraint>元素会指出哪些角色会有上述受保护的资源的访问权限<br />
+2.此元素下包括两节点元素：<br />
 
-        <role-name>
-         角色名称
+	<role-name>
+	 角色名称
 
-        <description>
-         角色描述
+	<description>
+	 角色描述
 
 这个角色从哪里来？ 在我们的tomcat安装目录有conf/tomcat-user.xml文件,有如下配置：
 
@@ -106,11 +106,11 @@ e.g.  \<role-name> role1 \</role-name> 表示只有role1用户可以访问受保
 如果配置了\<auth-constraint>元素，但内容为空，表示所有身份用户都被禁止访问相应的受保护资源<br />
 
 
-####4.\<user-data-contraint> <br />
-     1.字面上的意思是用户数据限制，此元素指出在访问受保护资源时使用什么传输协议<br />
-     2.此元素下面必须包含一个<transport-guarantee>元素和一个可选的<description>元素<br />
-     3.\<transport-guarantee>元素有三个合法的值：NONE、INTEGRAL、CONFIDENTIAL<br />
-     4.NONE对所有通讯协议不加限制，其它两个要求使用SSL<br />
+####4.\<user-data-contraint>
+1.字面上的意思是用户数据限制，此元素指出在访问受保护资源时使用什么传输协议<br />
+2.此元素下面必须包含一个<transport-guarantee>元素和一个可选的<description>元素<br />
+3.\<transport-guarantee>元素有三个合法的值：NONE、INTEGRAL、CONFIDENTIAL<br />
+4.NONE对所有通讯协议不加限制，其它两个要求使用SSL<br />
 
 
 
