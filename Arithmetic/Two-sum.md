@@ -69,4 +69,4 @@ a + b = c   =>   c - a = b
 
 ***
 
-本篇所属：[算法篇](/Arthmetic/Index)
+本篇所属：[算法篇](/Arithmetic/Index)

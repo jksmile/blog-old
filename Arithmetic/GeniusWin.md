@@ -37,7 +37,7 @@ CASE4.  假设桌上有N个弹珠（N=8），A先拿，无论A怎么拿，B都�
 
 ***
 
-本篇所属：[算法篇](/Arthmetic/Index)
+本篇所属：[算法篇](/Arithmetic/Index)
 
 
 

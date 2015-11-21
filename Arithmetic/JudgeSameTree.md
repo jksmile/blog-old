@@ -63,7 +63,7 @@
 
 ***
 
-本篇所属：[算法篇](/Arthmetic/Index)
+本篇所属：[算法篇](/Arithmetic/Index)
 
 
 
