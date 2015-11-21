@@ -9,7 +9,7 @@
 
 * [二叉树深度计算](./CalculateTreeDepth)
 
-* [二叉树结点之和最大路径](./FinxMaxValueOfPath)
+* [二叉树结点之和最大路径](./FindMaxValueOfPath)
 
 * [数组中是否有两数之和等于目标值](./Two-sum)
 
