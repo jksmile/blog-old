@@ -10,10 +10,23 @@ web.xml文件是用来初始化配置信息：比如Welcome页面、servlet、se
 这里有一份[web.xml文件范例](./webxml)，接下来我们将根据范例里对web.xml配置的描述进行相关的示例讲解
 
 
+
+*  [\<web-app>]()
+
+    *   [\<security-constraint>](./webxml-security-constraint)
+
+    *   [\<login-config>](./webxml-login-config)
+
+    *   [\<display-name>](./webxml-display-name)
+
+
+
+
+
 ***
 
 
-## 根节点信息
+##根节点信息
 
 每个xml文件都有定义它书写规则的Schema文件，也就是说javaEE的定义web.xml所对应的xml Schema文件中定义了多少种标签元素
 
@@ -48,4 +61,4 @@ Let's start...
 
 本篇所属：[java web篇](./Java/web/Index)
 
-下一篇：[web.xml 简介【1】之security-constraint介绍](./webxml-Introduction1)
+下一篇：[web.xml 简介【1】之security-constraint介绍](./webxml-security-constraint)
