@@ -71,7 +71,7 @@ web.xml的模式文件中定义的标签并不是定死的，模式文件也是�
 
 *  \<web-app>
 
-    *   [\<icon>](./webxml-icon.xml)
+    *   [\<icon>](./webxml-icon)
 
     *   [\<display-name>](./webxml-display-name)
 
