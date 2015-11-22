@@ -10,23 +10,10 @@ web.xml文件是用来初始化配置信息：比如Welcome页面、servlet、se
 这里有一份[web.xml文件范例](./webxml)，接下来我们将根据范例里对web.xml配置的描述进行相关的示例讲解
 
 
-
-*  [\<web-app>]()
-
-    *   [\<security-constraint>](./webxml-security-constraint)
-
-    *   [\<login-config>](./webxml-login-config)
-
-    *   [\<display-name>](./webxml-display-name)
-
-
-
-
-
 ***
 
 
-##根节点信息
+<h2 id="web-app">根节点信息</h2>
 
 每个xml文件都有定义它书写规则的Schema文件，也就是说javaEE的定义web.xml所对应的xml Schema文件中定义了多少种标签元素
 
@@ -55,10 +42,82 @@ web.xml的模式文件中定义的标签并不是定死的，模式文件也是�
 我们只需记住一些常用的并知道怎么配置就可以了，但我还是想全面的了解下web.xml文件各种配置的作用
 
 
-Let's start...
+
+**[web.xml文件范例](./webxml)中有如下一段描述：**
+
+
+    <!--
+    The web-app element is the root of the deployment descriptor for
+    a web application.
+    -->
+    <!ELEMENT web-app (icon?, display-name?, description?, distributable?,
+    context-param*, filter*, filter-mapping*, listener*, servlet*,
+    servlet-mapping*, session-config?, mime-mapping*, welcome-file-list?,
+    error-page*, taglib*, resource-env-ref*, resource-ref*, security-constraint*,
+    login-config?, security-role*, env-entry*, ejb-ref*,  ejb-local-ref*)>
+
+
+
+正如您所看到的，这个元素含有23个子元素，而且子元素都是可选的。问号(？)表示子元素是可选的，在一个节点下只能出现一次。
+
+星号(*)表示子元素可在部署描述符中出现零次或多次。有些子元素还可以有它们自己的子元素。
+
+
+**下面开始介绍各元素作用**
+
+***
+
+
+
+*  \<web-app>
+
+    *   [\<icon>](./webxml-icon.xml)
+
+    *   [\<display-name>](./webxml-display-name)
+
+    *   [\<description>](./webxml-description)
+
+    *   [\<distributable>](./webxml-distributable)
+
+    *   [\<context-param>](./webxml-context-param)
+
+    *   [\<filter>](./webxml-filter)
+
+    *   [\<listener>](./webxml-listener)
+
+    *   [\<servlet>](./webxml-servlet)
+
+    *   [\<servlet-mapping>](./webxml-servlet-mapping)
+
+    *   [\<session-config>](./webxml-session-config)
+
+    *   [\<mime-mapping>](./webxml-mime-mapping)
+
+    *   [\<welcome-file-list>](./webxml-welcome-file-list)
+
+    *   [\<error-page>](./webxml-error-page)
+
+    *   [\<taglib>](./webxml-taglib)
+
+    *   [\<resource-env-ref>](./webxml-resource-env-ref)
+
+    *   [\<resource-ref>](./webxml-resource-ref)
+
+    *   [\<security-constraint>](./webxml-security-constraint)
+
+    *   [\<login-config>](./webxml-login-config)
+
+    *   [\<security-role>](./webxml-security-role)
+
+    *   [\<env-entry>](./webxml-env-entry)
+
+    *   [\<ejb-ref>](./webxml-ejb-ref)
+
+    *   [\<ejb-local-ref>](./webxml-ebj-local-ref)
+
 
 ***
 
 本篇所属：[java web篇](./Java/web/Index)
 
-下一篇：[web.xml 简介【1】之security-constraint介绍](./webxml-security-constraint)
+下一篇：[web.xml 简介【1】之icon介绍](./webxml-icon)
