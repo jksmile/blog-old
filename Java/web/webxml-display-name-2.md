@@ -52,6 +52,6 @@
 
 本篇所属：[java web篇](./Java/web/Index)
 
-上一篇：[web.xml 简介【1】之icon介绍](./webxml-icon)
+上一篇：[web.xml 简介【1】之icon介绍](./webxml-icon-1)
 
-下一篇：[web.xml简介【3】之description介绍](./webxml-description)
+下一篇：[web.xml简介【3】之description介绍](./webxml-description-3)

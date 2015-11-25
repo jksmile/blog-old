@@ -112,6 +112,6 @@
 
 本篇所属：[java web篇](./Java/web/Index)
 
-上一篇：[web.xml简介【5】之context-param介绍](./webxml-context-param)
+上一篇：[web.xml简介【5】之context-param介绍](./webxml-context-param-5)
 
-下一篇：[web.xml简介【7】之context-param介绍](./webxml-context-param)
+下一篇：[web.xml简介【7】之listener介绍](./webxml-listener-7)

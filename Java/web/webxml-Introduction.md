@@ -71,23 +71,21 @@ web.xml的模式文件中定义的标签并不是定死的，模式文件也是�
 
 *  \<web-app>
 
-    *   [\<icon>](./webxml-icon)
+    *   [\<icon>](./webxml-icon-1)
 
-    *   [\<display-name>](./webxml-display-name)
+    *   [\<display-name>](./webxml-display-name-2)
 
-    *   [\<description>](./webxml-description)
+    *   [\<description>](./webxml-description-3)
 
-    *   [\<distributable>](./webxml-distributable)
+    *   [\<distributable>](./webxml-distributable-4)
 
-    *   [\<context-param>](./webxml-context-param)
+    *   [\<context-param>](./webxml-context-param-5)
 
-    *   [\<filter>](./webxml-filter)
+    *   [\<filter>](./webxml-filter-6)
 
-    *   [\<listener>](./webxml-listener)
+    *   [\<listener>](./webxml-listener-7)
 
-    *   [\<servlet>](./webxml-servlet)
-
-    *   [\<servlet-mapping>](./webxml-servlet-mapping)
+    *   [\<servlet>](./webxml-servlet-8)
 
     *   [\<session-config>](./webxml-session-config)
 
@@ -120,4 +118,4 @@ web.xml的模式文件中定义的标签并不是定死的，模式文件也是�
 
 本篇所属：[java web篇](./Java/web/Index)
 
-下一篇：[web.xml 简介【1】之icon介绍](./webxml-icon)
+下一篇：[web.xml 简介【1】之icon介绍](./webxml-icon-1)

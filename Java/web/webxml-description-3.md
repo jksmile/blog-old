@@ -62,6 +62,6 @@
 
 本篇所属：[java web篇](./Java/web/Index)
 
-上一篇：[web.xml 简介【2】之diplay-name介绍](./webxml-display-name)
+上一篇：[web.xml 简介【2】之diplay-name介绍](./webxml-display-name-2)
 
-下一篇：[web.xml简介【4】之distributable介绍](./webxml-distributable)
+下一篇：[web.xml简介【4】之distributable介绍](./webxml-distributable-4)

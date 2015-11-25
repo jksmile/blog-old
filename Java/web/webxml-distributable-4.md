@@ -60,6 +60,6 @@
 
 本篇所属：[java web篇](./Java/web/Index)
 
-上一篇：[web.xml简介【3】之description介绍](./webxml-description)
+上一篇：[web.xml简介【3】之description介绍](./webxml-description-3)
 
-下一篇：[web.xml简介【5】之context-param介绍](./webxml-context-param)
+下一篇：[web.xml简介【5】之context-param介绍](./webxml-context-param-5)

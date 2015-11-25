@@ -73,6 +73,6 @@
 
 本篇所属：[java web篇](./Java/web/Index)
 
-上一篇：[web.xml简介【4】之distributable介绍](./webxml-distributable)
+上一篇：[web.xml简介【4】之distributable介绍](./webxml-distributable-4)
 
-下一篇：[web.xml简介【6】之filter介绍](./webxml-filter)
+下一篇：[web.xml简介【6】之filter介绍](./webxml-filter-6)

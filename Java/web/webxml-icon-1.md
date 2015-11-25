@@ -43,4 +43,4 @@
 
 上一篇：[web.xml 介绍](./webxml-Introduction)
 
-下一篇：[web.xml 简介【2】之diplay-name介绍](./webxml-display-name)
+下一篇：[web.xml 简介【2】之diplay-name介绍](./webxml-display-name-2)
