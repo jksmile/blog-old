@@ -111,7 +111,7 @@ web.xml的模式文件中定义的标签并不是定死的，模式文件也是�
 
     *   [\<ejb-ref>](./webxml-ejb-ref-20)
 
-    *   [\<ejb-local-ref>](./webxml-ebj-local-ref-21)
+    *   [\<ejb-local-ref>](./webxml-ejb-local-ref-21)
 
 
 ***
