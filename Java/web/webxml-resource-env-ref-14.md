@@ -1,7 +1,7 @@
 
-#web.xml 简介【13】
+#web.xml 简介【14】
 
-## taglib 配置介绍
+## resource-env-ref 配置介绍
 
 
 	<?xml version="1.0" encoding="UTF-8"?>
@@ -80,7 +80,7 @@
 			<welcome-file>index.htm</welcome-file>
         </welcome-file-list>
 
-        <!-- 定义错误页面跳转-->
+        <!-- -->
         <error-page>
             <error-code>500</error-code>
             <location>/error.jsp</location>
@@ -97,6 +97,13 @@
             <taglib-location> /WEB-INF/tlds/MyTaglib.tld </taglib-location>
         </taglib>
 
+        <!-- -->
+        <resource-env-ref>
+            <description>Just Test</description>
+            <resource-env-ref-type> javax.jms.Queue </resource-env-ref-type>
+            <resource-env-ref-name> jms/StockQueue </resource-env-ref-name>
+        </resource-env-ref>
+
 	</web-app>
 
 
@@ -105,45 +112,51 @@
 
 
     <!--
-    The taglib element is used to describe a JSP tag library.
+    The resource-env-ref element contains a declaration of a web application's
+    reference to an administered object associated with a resource
+    in the web application's environment.  It consists of an optional
+    description, the resource environment reference name, and an
+    indication of the resource environment reference type expected by
+    the web application code.
 
     Used in: web-app
+
+    Example:
+
+    <resource-env-ref>
+        <resource-env-ref-name>jms/StockQueue</resource-env-ref-name>
+        <resource-env-ref-type>javax.jms.Queue</resource-env-ref-type>
+    </resource-env-ref>
     -->
-    <!ELEMENT taglib (taglib-uri, taglib-location)>
+    <!ELEMENT resource-env-ref (description?, resource-env-ref-name,
+            resource-env-ref-type)>
 
     <!--
-    the taglib-location element contains the location (as a resource
-    relative to the root of the web application) where to find the Tag
-    Libary Description file for the tag library.
+    The resource-env-ref-name element specifies the name of a resource
+    environment reference; its value is the environment entry name used in
+    the web application code.  The name is a JNDI name relative to the
+    java:comp/env context and must be unique within a web application.
 
-    Used in: taglib
+    Used in: resource-env-ref
     -->
-    <!ELEMENT taglib-location (#PCDATA)>
-
-    <!--
-    The taglib-uri element describes a URI, relative to the location
-    of the web.xml document, identifying a Tag Library used in the Web
-    Application.
-
-    Used in: taglib
-    -->
-    <!ELEMENT taglib-uri (#PCDATA)>
+    <!ELEMENT resource-env-ref-name (#PCDATA)>
 
 
 
-\<taglib对标记库描述符文件指定别名。此功能使你能够更改TLD文件的位置，而不用编辑使用这些文件的JSP页面。
+\<resource-env-ref>声明与资源相关的一个管理对象。其节点下有元素\<description>,\<resource-env-ref-type>,\<resource-env-ref-name>
 
-\<taglib-uri>URI\</taglib-uri> taglib-uri定义TLD文件的URI,JSP网页的taglib指令可以经由这个URI存取到TLD文件.
+\<description>元素是可选元素，描述作用
 
-\<taglib-location>/WEB-INF/lib/MyTaglib.tld\</taglib-laction> TLD文件对应Web站台的存放位置.
+\<resource-env-ref-type>元素定义引用资源的类型
 
+\<resource-env-ref-name>元素定义引用资源名称
 
 
 ***
 
 本篇所属：[java web篇](./Java/web/Index)
 
-上一篇：[web.xml简介【12】之error-page介绍](./webxml-error-page-12)
+上一篇：[web.xml简介【13】之taglib介绍](./webxml-taglib-13)
 
-下一篇：[web.xml简介【14】之resource-env-ref介绍](./webxml-resource-env-ref-14)
+下一篇：[web.xml简介【15】之taglib介绍](./webxml-resource-ref-15)
 

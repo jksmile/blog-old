@@ -30,6 +30,8 @@ login-config配置与需要与<security-constraint>元素节点下的<auth-const
 
 本篇所属：[java web篇](./Java/web/Index)
 
-上一篇：[web.xml 简介【2】之login-config介绍](./webxml-Introduction1)
+上一篇：[web.xml简介【16】之security-constraint介绍](./webxml-security-constraint-16)
+
+下一篇：[web.xml简介【18】之security-role介绍](./webxml-security-role-18)
 
 

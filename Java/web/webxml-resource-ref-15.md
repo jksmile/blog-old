@@ -1,7 +1,7 @@
 
-#web.xml 简介【13】
+#web.xml 简介【15】
 
-## taglib 配置介绍
+## resource-ref 配置介绍
 
 
 	<?xml version="1.0" encoding="UTF-8"?>
@@ -97,7 +97,22 @@
             <taglib-location> /WEB-INF/tlds/MyTaglib.tld </taglib-location>
         </taglib>
 
+        <!-- -->
+        <resource-env-ref>
+            <description>Just Test</description>
+            <resource-env-ref-type> javax.jms.Queue </resource-env-ref-type>
+            <resource-env-ref-name> jms/StockQueue </resource-env-ref-name>
+        </resource-env-ref>
+
+        <!-- -->
+        <resource-ref>
+
+
+        </resource-ref>
+
 	</web-app>
+
+
 
 
 
@@ -105,37 +120,32 @@
 
 
     <!--
-    The taglib element is used to describe a JSP tag library.
+    The resource-ref element contains a declaration of a web application's
+    reference to an external resource. It consists of an optional
+    description, the resource manager connection factory reference name,
+    the indication of the resource manager connection factory type
+    expected by the web application code, the type of authentication
+    (Application or Container), and an optional specification of the
+    shareability of connections obtained from the resource (Shareable or
+    Unshareable).
 
     Used in: web-app
+
+    Example:
+
+        <resource-ref>
+        <res-ref-name>jdbc/EmployeeAppDB</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+        </resource-ref>
     -->
-    <!ELEMENT taglib (taglib-uri, taglib-location)>
-
-    <!--
-    the taglib-location element contains the location (as a resource
-    relative to the root of the web application) where to find the Tag
-    Libary Description file for the tag library.
-
-    Used in: taglib
-    -->
-    <!ELEMENT taglib-location (#PCDATA)>
-
-    <!--
-    The taglib-uri element describes a URI, relative to the location
-    of the web.xml document, identifying a Tag Library used in the Web
-    Application.
-
-    Used in: taglib
-    -->
-    <!ELEMENT taglib-uri (#PCDATA)>
+    <!ELEMENT resource-ref (description?, res-ref-name, res-type, res-auth,
+            res-sharing-scope?)>
 
 
 
-\<taglib对标记库描述符文件指定别名。此功能使你能够更改TLD文件的位置，而不用编辑使用这些文件的JSP页面。
 
-\<taglib-uri>URI\</taglib-uri> taglib-uri定义TLD文件的URI,JSP网页的taglib指令可以经由这个URI存取到TLD文件.
-
-\<taglib-location>/WEB-INF/lib/MyTaglib.tld\</taglib-laction> TLD文件对应Web站台的存放位置.
 
 
 
@@ -143,7 +153,7 @@
 
 本篇所属：[java web篇](./Java/web/Index)
 
-上一篇：[web.xml简介【12】之error-page介绍](./webxml-error-page-12)
+上一篇：[web.xml简介【14】之resource-env-ref介绍](./webxml-resource-env-ref-14)
 
-下一篇：[web.xml简介【14】之resource-env-ref介绍](./webxml-resource-env-ref-14)
+下一篇：[web.xml简介【16】之security-constraint介绍](./webxml-security-constraint-16)
 

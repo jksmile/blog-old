@@ -1,7 +1,7 @@
 
 
 
-#web.xml 简介【1】
+#web.xml 简介【16】
 
 ## security-constraint 配置介绍
 
@@ -118,9 +118,9 @@ e.g.  \<role-name> role1 \</role-name> 表示只有role1用户可以访问受保
 
 本篇所属：[java web篇](./Java/web/Index)
 
-上一篇：[web.xml 简介](./webxml-Introduction)
+上一篇：[web.xml简介【15】之taglib介绍](./webxml-resource-ref-15)
 
-下一篇：[web.xml 简介【2】之login-config介绍](./webxml-login-config)
+下一篇：[web.xml简介【17】之security-role介绍](./webxml-security-role-17)
 
 
 

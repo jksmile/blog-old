@@ -87,31 +87,31 @@ web.xml的模式文件中定义的标签并不是定死的，模式文件也是�
 
     *   [\<servlet>](./webxml-servlet-8)
 
-    *   [\<session-config>](./webxml-session-config)
+    *   [\<session-config>](./webxml-session-config-9)
 
-    *   [\<mime-mapping>](./webxml-mime-mapping)
+    *   [\<mime-mapping>](./webxml-mime-mapping-10)
 
-    *   [\<welcome-file-list>](./webxml-welcome-file-list)
+    *   [\<welcome-file-list>](./webxml-welcome-file-list-11)
 
-    *   [\<error-page>](./webxml-error-page)
+    *   [\<error-page>](./webxml-error-page-12)
 
-    *   [\<taglib>](./webxml-taglib)
+    *   [\<taglib>](./webxml-taglib-13)
 
-    *   [\<resource-env-ref>](./webxml-resource-env-ref)
+    *   [\<resource-env-ref>](./webxml-resource-env-ref-14)
 
-    *   [\<resource-ref>](./webxml-resource-ref)
+    *   [\<resource-ref>](./webxml-resource-ref-15)
 
-    *   [\<security-constraint>](./webxml-security-constraint)
+    *   [\<security-constraint>](./webxml-security-constraint-16)
 
-    *   [\<login-config>](./webxml-login-config)
+    *   [\<login-config>](./webxml-login-config-17)
 
-    *   [\<security-role>](./webxml-security-role)
+    *   [\<security-role>](./webxml-security-role-18)
 
-    *   [\<env-entry>](./webxml-env-entry)
+    *   [\<env-entry>](./webxml-env-entry-19)
 
-    *   [\<ejb-ref>](./webxml-ejb-ref)
+    *   [\<ejb-ref>](./webxml-ejb-ref-20)
 
-    *   [\<ejb-local-ref>](./webxml-ebj-local-ref)
+    *   [\<ejb-local-ref>](./webxml-ebj-local-ref-21)
 
 
 ***
