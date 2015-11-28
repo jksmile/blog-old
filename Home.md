@@ -6,7 +6,7 @@
     Welcome to my world and enjoy yourself.
 
 
-*   [JAVA篇](./Java/Index)
+*   JAVA篇
 
     *   [Java Web篇](./Java/web/Index)
     *   [JAVA JVM篇](./Java/jvm/Index)
