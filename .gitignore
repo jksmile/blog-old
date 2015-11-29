@@ -9,6 +9,8 @@
 
 # Ignore the IDE framework files.
 
+blog.iml
+
 .idea/
 
 
