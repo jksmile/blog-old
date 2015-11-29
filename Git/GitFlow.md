@@ -4,6 +4,7 @@
 
 原文URL: [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 
+转载URL: [基于git的源代码管理模型](http://www.ituring.com.cn/article/56870)
 ***
 
 *   [git flow是什么](#what-is-git-flow)
