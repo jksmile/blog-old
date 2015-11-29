@@ -30,11 +30,15 @@
     # 查看本地分枝
     git branch
 
-    #查看远程分支
+    # 查看远程分支
     git branch -r
 
-    # 删除分支
+    # 删除本地分支 【强行删除，分支上未提交的内容或者分支的上的内容未合并到主分支】
     git branch -D branch_name
+
+    # 删除远程分支 【注意第二行命令":"前一空格，表示空分支】
+    git branch -r -d branch_name
+    git push origin :branch_name
 
     # 查看分支之间的差异
     git diff master branch
@@ -124,7 +128,7 @@
 
     git branch --set-upstream-to=origin/existBranch branchName
 
-    git push origin branchName
+    git push origin existBranch
     
 
 
