@@ -114,10 +114,18 @@
     #push到远程仓库
     git push -u origin master
 
-    #本地GIT新分支，推到远程仓库
-    git --set-upstream
+#### 本地GIT新分支，作为新分支推到远程仓库
 
+    git branch --set-upstream-to=origin branchName
 
+    git push origin branchName
+
+#### 本地GIT新分支，推到远程仓库存在的分支
+
+    git branch --set-upstream-to=origin/existBranch branchName
+
+    git push origin branchName
+    
 
 
 
