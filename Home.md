@@ -15,4 +15,6 @@
 
 *   [MySQL篇](./MySQL/Index)
 
+*   [Git篇](./Git/Index)
+
 *   [Markdown篇](./Markdown/Index)
