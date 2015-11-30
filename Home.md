@@ -8,8 +8,8 @@
 
 *   JAVA篇
 
-    *   [Java Web篇](./Java/web/Index)
-    *   [JAVA JVM篇](./Java/jvm/Index)
+    *   [Web篇](./Java/web/Index)
+    *   [JVM篇](./Java/jvm/Index)
 
 *   [算法篇](./Arithmetic/Index)
 
