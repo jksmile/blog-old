@@ -2,7 +2,7 @@
 ## 设计模式
 
 
-*   [设计原则](./8)
+*   [设计原则](./Principle)
     *   [单一原则](./Principle#SRP)
     *   [里氏替换原则](./Principle#LSP)
     *   [依赖倒置原则](./Principle#DIP)
@@ -11,7 +11,7 @@
     *   [开闭原则](./Principle#OCP)
     
 *   [创建型模式](./Index)
-    *   [单例模式](./SinglePattern)
+    *   [单例模式](./Singleton)
     *   [简单工厂模式](./SimpleFactoryPattern)
     *   [工厂方法模式](./FactoryMethodPattern)
     *   [抽象工厂模式](./AbstractFactoryPattern)
