@@ -2,7 +2,7 @@
 ## 设计模式
 
 
-*   [设计原则](./Principle)
+*   [设计原则](./8)
     *   [单一原则](./Principle#SRP)
     *   [里氏替换原则](./Principle#LSP)
     *   [依赖倒置原则](./Principle#DIP)
