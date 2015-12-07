@@ -12,7 +12,7 @@
     
 *   [创建型模式](./Index)
     *   [单例模式](./Singleton)
-    *   [简单工厂模式](./SimpleFactoryPattern)
+    *   [简单工厂模式](./SimpleFactory)
     *   [工厂方法模式](./FactoryMethodPattern)
     *   [抽象工厂模式](./AbstractFactoryPattern)
     *   [构造者模式](./BuilderPattern)
