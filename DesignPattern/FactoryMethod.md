@@ -117,9 +117,9 @@
 相关推荐：[设计模式原则](./Principle)
 
 
-上一篇：
+上一篇：[简单工厂模式](./SimpleFactory)
 
-下一篇：[简单工厂模式](./SimpleFactory)
+下一篇：[抽象工厂模式](./AbstractFactory)
 
 
 
