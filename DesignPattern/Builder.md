@@ -140,9 +140,9 @@
 相关推荐：[设计模式原则](./Principle)
 
 
-上一篇：[抽象工厂模式](./AbstractFactory)
+上一篇：[【创建型】抽象工厂模式](./AbstractFactory)
 
-下一篇：[简单工厂模式](./SimpleFactory)
+下一篇：[【创建型】原型模式](./Prototype)
 
 
 

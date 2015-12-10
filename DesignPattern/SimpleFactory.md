@@ -131,9 +131,9 @@
 相关推荐：[设计模式原则](./Principle)
 
 
-上一篇：[单例模式](./Singleton)
+上一篇：[【创建型】单例模式](./Singleton)
 
-下一篇：[工厂方法模式](./FactoryMethod)
+下一篇：[【创建型】工厂方法模式](./FactoryMethod)
 
 
 

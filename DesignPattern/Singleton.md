@@ -103,7 +103,7 @@
 
 上一篇：
 
-下一篇：[简单工厂模式](./SimpleFactory)
+下一篇：[【创建型】简单工厂模式](./SimpleFactory)
 
 
 
