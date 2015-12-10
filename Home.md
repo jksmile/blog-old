@@ -10,9 +10,10 @@
 
     *   [Web篇](./Java/web/Index)
     *   [JVM篇](./Java/jvm/Index)
-    *   [设计模式](./DesignPattern/Index)
-    
+
 *   [算法篇](./Arithmetic/Index)
+
+*   [设计模式](./DesignPattern/Index)
 
 *   [MySQL篇](./MySQL/Index)
 
