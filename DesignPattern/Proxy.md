@@ -12,109 +12,84 @@
 
 <h3 id="define">定义</h3>
 
-    定义：
+    定义：为其他对象提供一种代理以控制对这个对象的访问。
+    
+    代理模式几个角色：
+        1.主题接口：提取真正使用类与代理类的公共方法
+        2.真正主题：真正处理请求的类
+        3.代理类：真正主题的代理类
+    
 
 
 <h3 id="UML">UML图</h3>
 
 
-                        _ _ _ _ _ _ _ _ _
-                       |                 |
-                       |     Component   |------------┐
-                       |_ _ _ _ _ _ _ _ _|            |
-                                ↑                     |
-                                |                     |
-                ┌--------------------------------┐    |
-          _ _ _ |_  _ _ _ _              _ _ _ _ | _ _↓_ _
-         |                 |            |                 |
-         |ConcreteComponent|            |     Decorator   |
-         |_ _ _ _ _ _ _ _ _|            |_ _ _ _ _ _ _ _ _|
-                                                  ↑
-                                                  |
-                                ┌---------------------------------┐
-                          _ _ _ |_  _ _ _ _ _              _ _ _ _|_ _ _ _ _ _
-                         |                   |            |                   |
-                         |ConcreteComponentX |            |ConcreteComponentY |
-                         |_ _ _ _ _ _ _ _ _ _|            |_ _ _ _ _ _ _ _ _ _|
-
-
+                
+                
+                     _ _ _ _ _ _ _ _ _
+                    |                 |
+                    |     Interface   |
+                    |_ _ _ _ _ _ _ _ _|
+                              ↑
+                              |
+            ┌---------------------------------┐
+      _ _ _ |_  _ _ _ _ _              _ _ _ _|_ _ _ _ _ _
+     |                   |            |                   |
+     |        Proxy      |-----------→|     RealSubject   |
+     |_ _ _ _ _ _ _ _ _ _|            |_ _ _ _ _ _ _ _ _ _|
+               ↑             
+               |
+      _ _ _ _ _ _ _ _ _ _       
+     |                   | 
+     |      Client       |
+     |_ _ _ _ _ _ _ _ _ _|  
+    
 
 
 <h3 id="code">代码</h3>
 
-    public abstract class Exam{
+    public interface Network{
 
-        public abstract void doAction();
+        public  void innerNet();
     }
 
 
 ***
 
-    public class ExamImp extends Exam{
+    public class BeijingNetwork implements Network{
 
         @override
-        public void doAction(){
+        public void innerNet(){
 
-            System.out.println("Do my best!");
+            System.out.println("This is inner net");
         }
     }
 
 
 ***
 
-    public abstract class Student extends Exam{
+    public ProxyNetWork implements Network{
 
-        protected Exam exam;
+        private BeijingNetwork bjNetwork;
 
 
-        public Student(Exam exam){
+    public ProxyNetWork(){
 
-            this.exam = exam;
-        }
+            this.bjNetwork = new BeijingNetwork();
+        } 
 
 
         @override
-        public void doAction(){
+        public void innerNet(){
 
-            exam.doAction();
+            bjNetwork.innerNet();
         }
 
     }
 
 ***
 
-    public class StudentA extends Student{
-
-        public StudentA(Exam exam){
-
-            Super(exam);
-        }
-
-
-        private void doBefore(){
-
-            System.out.println("Have a good rest!");
-        }
-
-
-        private void doAfter(){
-
-            System.out.println("Waiting for result!");
-        }
-
-
-        @override
-        public void doAction(){
-
-            doBefore();
-
-            super.doAction();
-
-            doAfter();
-        }
-    }
-
-
+ 
 ***
 
     public class Client{
@@ -122,11 +97,9 @@
 
         public static void main(String[] args){
 
-            Exam exam = new ExamImp();
+            ProxyNetWork proxy = new ProxyNetWork();
 
-            Student studentA = new StudentA(exam);
-
-            studentA.doAction();
+            proxy.innerNet();            
 
         }
 
@@ -137,9 +110,6 @@
 
 <h3 id="app">应用</h3>
 
-    1.需要在不影响其他对象的情况下，以动态、透明的方式给对象添加职责;
-
-    2.如果不适合使用子类来进行扩展的时候，可以考虑使用装饰器模式;
 
 
 ***
