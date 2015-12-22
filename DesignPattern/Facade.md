@@ -139,9 +139,7 @@
 
     }
 
-
-***
-
+    
     运行结果：
 
         Pull the new content from remote...
