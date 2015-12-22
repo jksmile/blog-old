@@ -56,17 +56,9 @@
 
 <h3 id="code">代码</h3>
 
-    public interface {
+    public interface Car{
 
-        public void pull(){
-
-            System.out.println("Pull the new content from remote...");
-        }
-
-        public void push(){
-
-            System.out.println("push the local content to remote...");
-        }
+        public void run();
 
 
     }
@@ -74,16 +66,11 @@
 
 ***
 
-    public class MvnAction(){
+    public class Audi implement Car{
 
-        public void mvnImport(){
+        public void run(){
 
-            System.out.println("Import the new dependency jar...");
-        }
-
-        public void mvnInstall(){
-
-            System.out.println("Compile the project file for run...");
+            System.out.println("Audi:Max speed 200km/h");
         }
 
     }
@@ -91,60 +78,81 @@
 
 ***
 
-    public class Facade(){
+    public class Landrover implement Car{
 
-        private GitAction git;
+        public void run(){
 
-        private MvnAction mvn;
-
-        public Facade(GitAction git, MvnAction mvn){
-
-            this.git = git;
-
-            this.mvn = mvn;
-        }
-
-        public void updateProject(){
-
-            git.pull();
-
-            mvn.Import();
-
-            git.push();
+            System.out.println("Max speed 240km/h");
         }
 
     }
 
+***
+
+    abstract class CarCompete{
+
+        private Car car;
+
+        public Bridge(Car car){
+
+            this.car = car;
+        }
+
+        public void run(){
+
+            car.run();
+        }
+
+        public abstract void prize();
+
+    }
+
+
+***
+
+
+    public class F1 extends CarCompete{
+
+
+        public F1(Car car){
+
+            super(car);
+        }
+
+
+        @override
+        public void prize(){
+
+            System.out.println("Congratulations! Gold medal will be provided by F1.");
+        }
+
+    }
 
 ***
 
     public class Client{
 
-
         public static void main(String[] args){
 
-            GitAction git = new GitAction();
 
-            MvnAction mvn = new MvnAction();
+            Car audi = new Audi();
 
-            Facade facade = new Facade(git,mvn);
+            F1 f1 = new F1(audi);
 
-            facade.updateProject();
+            f1.run();
 
+            f1.prize();
 
         }
 
     }
 
-    
+
     运行结果：
 
-        Pull the new content from remote...
+        Audi:Max speed 200km/h
 
-        Import the new dependency jar...
-
-        push the local content to remote...
-
+        Congratulations! Gold medal will be provided by F1.
 
 
 
@@ -157,9 +165,9 @@
 相关推荐：[设计模式原则](./Principle)
 
 
-上一篇：[【结构型】代理模式](./Proxy)
+上一篇：[【结构型】外观模式](./Facade)
 
-下一篇：[【结构型】桥接模式](./Bridge)
+下一篇：[【结构型】组合模式](./Composite)
 
 
 
