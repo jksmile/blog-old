@@ -6,17 +6,21 @@
     Welcome to my world and enjoy yourself.
 
 
-*   JAVA篇
+*   JAVA
 
     *   [Web篇](./Java/web/Index)
     *   [JVM篇](./Java/jvm/Index)
 
-*   [算法篇](./Arithmetic/Index)
+*   [算法](./Arithmetic/Index)
 
 *   [设计模式](./DesignPattern/Index)
 
-*   [MySQL篇](./MySQL/Index)
+*   数据库
 
-*   [Git篇](./Git/Index)
+    *   [MySQL篇](./MySQL/Index)
+
+*   协作工具
+    
+    *   [Git](./Git/Index)
 
 *   [Markdown篇](./Markdown/Index)
