@@ -8,7 +8,7 @@
 ***
 
 
-<img src="/logo.jpg" width="0" height="0" />
+
 
 
 <h3 id="transaction">什么是事务？</h3>

@@ -1,6 +1,3 @@
-<head>
-    <title>设计模式-【行为型】迭代器模式<title>
-</head>
 
 
 ## 【行为型】迭代器模式
@@ -11,7 +8,7 @@
 *   [应用](#app)
 
 
-<img src="/logo.jpg" width="0" height="0" />
+
 
 <h3 id="define">定义</h3>
 
