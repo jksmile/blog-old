@@ -31,7 +31,7 @@
     *   [策略模式](./Strategy)
     *   [模板方法模式](./TemplateMethod)
     *   [观察者模式](./Observer)
-    *   [迭代子模式](./Iterator)
+    *   [迭代器模式](./Iterator)
     *   [责任链模式](./ResponsibilityChain)
     *   [命令模式](./Command)
     *   [备忘录模式](./Memento)
