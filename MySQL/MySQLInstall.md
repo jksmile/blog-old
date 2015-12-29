@@ -2,10 +2,17 @@
 
 ## MySQL 安装
 
+*   [前言](#preface)
+
+*   [从GIT源安装](#install)
+
+*   [注意事项](#notice)
 
 
-### 前言
-    
+<h3 id="preface">前言</h3>
+
+
+
 MySQL安装在其官网上说的已经非常详细
 
 MySQL安装文档：[http://dev.mysql.com/doc/refman/5.7/en/installing.html](http://dev.mysql.com/doc/refman/5.7/en/installing.html)
@@ -14,7 +21,9 @@ MySQL安装文档：[http://dev.mysql.com/doc/refman/5.7/en/installing.html](htt
 
 接下来要安装的版本是5.6
 
-### 从GIT源安装
+
+
+<h3 id="install">从GIT源安装</h3>
 
 MySQL Git Repository: [https://github.com/mysql/mysql-server](https://github.com/mysql/mysql-server)
 
@@ -63,7 +72,7 @@ MySQL Git Repository: [https://github.com/mysql/mysql-server](https://github.com
     12. cp support-files/mysql.server /etc/init.d/mysqld 【作为系统服务命令】
 
 
-### 安装中注意事项
+<h3 id="notice">注意事项</h3>
 
 1.如果在启动后，mysql本地登陆,无法找到mysql.sock文件，两种解决方案：
   

@@ -1,8 +1,16 @@
 ￼￼
 ## MySQL 事务
 
+*   [什么是事务](#transaction)
+
+*   [实操]($action)
+
+
 <img src="/logo.jpg" width="0" height="0" />
-### 什么是事务？
+
+
+<h3 id="transaction">什么是事务？</h3>
+
 
 定义：事务是由一组原子性的SQL组成的工作单元。
 
@@ -30,7 +38,7 @@ D：durability(持久性)
 要实现ACID原则，数据库需要做很多复杂的工作，同时会增加系统的开销，对机器的要求也会更高。
 
 
-### 实操
+<h3 id="action">实操</h3>
 
 MySQL并不是所有的引擎都支持事务，InnoDB引擎支持事务，MyISAM就不支持事务
 
