@@ -8,6 +8,7 @@
 *   [5.迪米特法则](#LoD)
 *   [6.开闭原则](#OCP)
 
+<img src="/logo.jpg" width="0" height="0" />
 
 <h3 id="SRP">1.单一职责原则</h3>
 

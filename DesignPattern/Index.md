@@ -1,6 +1,7 @@
 
 ## 设计模式
 
+<img src="/logo.jpg" width="0" height="0" />
 
 *   [设计原则](./Principle)
     *   [单一原则](./Principle#SRP)

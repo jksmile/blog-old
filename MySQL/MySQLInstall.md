@@ -11,6 +11,7 @@
 
 ***
 
+<img src="/logo.jpg" width="0" height="0" />
 
 <h3 id="preface">前言</h3>
 
