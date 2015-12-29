@@ -1,7 +1,7 @@
 ￼￼
 ## MySQL 事务
 
-
+<img src="/logo.jpg" width="0" height="0" />
 ### 什么是事务？
 
 定义：事务是由一组原子性的SQL组成的工作单元。
@@ -102,6 +102,7 @@ InnoDB引擎默认是开启自动提交的，我们接下来看来：
 
 然后发现客户端B一直执行中，因为客户端A的事务还没有提交，导致id=1这一行的数据被锁，客户端B等级解锁；
 
+接下来，我们将客户端A提交操作
 
 **客户端A：**
 
@@ -114,6 +115,13 @@ InnoDB引擎默认是开启自动提交的，我们接下来看来：
     mysql>update test set id=800 where id=1;
     Query OK, 0 rows affected (5.55 sec)
     Rows matched: 0  Changed: 0  Warnings: 0
+
+
+
+客户端B在客户端A完成事务完成时，立即执行成功，但执行的影响行数为0，因为id=1的记录已经不存在了。
+
+
+
 
 
 
