@@ -17,7 +17,7 @@
     适配器接口的几个角色：
 
         1.目标接口(TargetInterface)：Client端所期待的接口【可以是具体的类、抽象类、接口】；
-        2.适配类(ServerInterface)：需要适配的类【Server端提供的原接口】；
+        2.适配类(ServerAPI)：需要适配的类【Server端提供的原接口】；
         3.适配器(AdapterInterface)：将适配类包装成目标接口的类；
 
 
@@ -30,17 +30,17 @@
 
 <h3 id="UML">UML图</h3>
 
-      _ _ _ _        _ _ _ _ _ _ _ _ _
-    |        |      |                 |
-    | Client |-----→| TargetInterface |
-    | _ _ _ _|      |_ _ _ _ _ _ _ _ _|
-                            ↑
-                            |
-                            |
-                      _ _ _ |_  _ _ _ _      _ _ _ _ _ _ _ _ _
-                     |                 |    |                 |
-                     |AdapterInterface |---→| ServerInterface |
-                     |_ _ _ _ _ _ _ _ _|    |_ _ _ _ _ _ _ _ _|
+      _ _ _ _      _ _ _ _ _ _
+    |        |    |           |
+    | Client |---→| TargetAPI |
+    | _ _ _ _|    |_ _ _ _ _ _|
+                       ↑
+                       |
+                       |
+                  _ _ _|_ _ _ _      _ _ _ _ _ _
+                 |             |    |           |
+                 |  AdapterAPI |---→| ServerAPI |
+                 |_ _ _ _ _ _ _|    |_ _ _ _ _ _|
 
 
 
@@ -58,7 +58,7 @@
 
 ***
 
-    public class ServerInterface{
+    public class ServerAPI{
 
         public void echoData(){
 
@@ -71,14 +71,13 @@
 
     public class AdapterInterface extends TargetInterface{
 
-        private ServerInterface serverInterface = new ServerInterface();
+        private ServerAPI serverAPI = new ServerAPI();
 
         @override
         public void method1(){
 
-            serverInterface.echoData();
+            serverAPI.echoData();
         }
-
 
     }
 
@@ -93,7 +92,6 @@
             AdapterInterface adapterInterface = new AdapterInterface();
 
             adapterInterface.method1();
-
         }
 
     }
