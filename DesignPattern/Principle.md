@@ -9,6 +9,7 @@
 *   [6.开闭原则](#OCP)
 
 
+
 <h3 id="SRP">1.单一职责原则</h3>
 
     单一职责原则简称SRP【Single Responsibility Principle】,设计模式最基本原则。
