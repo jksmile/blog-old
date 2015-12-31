@@ -28,7 +28,7 @@ C：consistency(一致性)
 
     数据库总是从一个一致性状态切换到另一个一致性状态。
     
-I：isolation(隔离性)
+I：[isolation(隔离性)](./MySQLIsolation)
 
     在一个事务执行过程中，对其它事务是不可见的。
     
