@@ -1,7 +1,7 @@
 
 ## MySQL 事务隔离级别
 
-
+*   [前言](#pre)
 *   [读异常](#readException)
 *   [隔离级别](#isolationLevel)
 *   [实操](#actioin)
@@ -9,13 +9,20 @@
     *   [2.验证提交读](#verifyReadCommitted)
     *   [3.验证可重复读](#verifyRepeatableRead)
 
+
+***
+
+
+<h3 id="pre">前言</h3>
+***
+
 MySQL事务中的隔离性在SQL标准定义中定义了四种隔离级别
 
 简单的理解就是不是每种业务需求都需要很高的隔离性，针对不同的场景使用不同的隔离
 
 
 <h3 id="readException">读异常</h3>
-<hr />
+***
 
 **在介绍四种隔离级别前，我们来了解下关于读数据时容易发生的异常：**
 
@@ -30,7 +37,7 @@ MySQL事务中的隔离性在SQL标准定义中定义了四种隔离级别
 
 
 <h3 id="isolatioinLevel">隔离级别</h3>
-<hr />
+***
 
 **下面介绍下MySQL的四种隔离级别【从低到高】：**
 
@@ -61,9 +68,8 @@ MySQL事务中的隔离性在SQL标准定义中定义了四种隔离级别
         
 <h3 id="action">实操</h3>
 
-<hr />
 <h4 id="verifyReadUncommitted">1.验证未提交读</h4>
-<hr />
+***
 
 **客户端A：**
 
@@ -176,7 +182,7 @@ MySQL事务中的隔离性在SQL标准定义中定义了四种隔离级别
 
 
 <h4 id="verifyReadCommitted">2.验证提交读</h4>
-<hr />
+***
 
 **客户端A[验证提交读]：**
 
@@ -289,7 +295,7 @@ MySQL事务中的隔离性在SQL标准定义中定义了四种隔离级别
 
 
 <h4 id="verifyRepeatableRead">3.验证可重复读</h4>
-<hr />
+***
 
 **客户端A[验证可重复读]：**
 
