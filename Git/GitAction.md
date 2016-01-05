@@ -1,5 +1,5 @@
 
-## Git常用操作
+## Git 常用命令
 
 *   [基础操作](#basicAction)
 
@@ -37,14 +37,18 @@
     git branch -D branch_name
 
     # 删除远程分支 【注意第二行命令":"前一空格，表示空分支】
-    git branch -r -d branch_name
+    git branch -dr branch_name
     git push origin :branch_name
-
+    git push origin --delete branch_name
+    
     # 查看分支之间的差异
     git diff master branch
 
     # 查看最新版本和上一个版本的差异(一个^表示向前推进一个版本)
     git diff HEAD HEAD^
+
+    # 查看某个文件的修改记录
+    git blame fileName
 
     # 查看状态
     git status
