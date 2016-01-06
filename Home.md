@@ -11,13 +11,9 @@
     *   [Web篇](./Java/web/Index)
     *   [JVM篇](./Java/jvm/Index)
 
-*   数据库
-
-    *   [MySQL篇](./MySQL/Index)
-
-*   协作工具
+*   [MySQL篇](./MySQL/Index)
     
-    *   [Git](./Git/Index)
+*   [Git](./Git/Index)
 
 *   [算法](./Arithmetic/Index)
 
