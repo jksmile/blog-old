@@ -15,7 +15,7 @@
 
 * [零后置，保持数字相对排序](./ZeroLast)
 
-* [快速排序1](./QuickSort1)
+* [快速排序](./Sort/QuickSort)
 
 
 
