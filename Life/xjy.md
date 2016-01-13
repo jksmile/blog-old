@@ -2,7 +2,7 @@
 
 ## 徐静伊成长瞬间
 
-<img src="/Resource/xjk/logo.jpg" width="0" height="0" />
+<img src="/Resource/xjy/logo.jpg" width="0" height="0" />
 
 
 
