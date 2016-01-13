@@ -9,6 +9,7 @@
 *   [Code](#code)
 
 
+***
 
 
 <h3 id="idea">快排思想</h3>
