@@ -36,7 +36,7 @@
 
 <h3 id="code">代码</h3>
 
-    public abstract Swim{
+    public abstract class Swim{
 
         public abstract void warmUp();
         

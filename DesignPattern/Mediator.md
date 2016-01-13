@@ -52,12 +52,125 @@
 
 
 <h3 id="code">代码</h3>
+    
+    public abstract class PostOffice{
+    
+        public abstract void send();
+        
+        public abstract void receive();
+    }
 
+    
+***
 
+    public class BjPost extends PostOffice{
+        
+        private Poster sender;
+        
+        private Poster receiver;
+        
+        //Getter and Setter
+        ...
+        
+        @override
+        public void send(){
+            
+            sender.sendMsg();            
+        }
+        
+        @override
+        public void receive(){
+        
+            receiver.receiveMsg();
+        }
+    
+    }
+
+***
+
+    public abstract class Poster{
+    
+        private PostOffice postOffice;
+        
+        public abstract void sendMsg();
+        
+        public abstract void receiveMsg();
+    }
+    
+***
+
+    public PosterA extends Poster{
+    
+        public PosterA(PostOffice postOffice){
+            
+            this.postOffice = postOffice;
+        }
+        
+        @override
+        public void sendMsg(){
+            
+            System.out.println("I'm posterA and just send message for district of Haidian.");
+        }
+        
+        @override
+        public void receiveMsg(){
+            
+            System.out.println("I'm posterA and just receive message from district of Chaoyang.");
+        }
+    }
+
+***
+
+    public PosterB extends Poster{
+        
+        public PosterB(PostOffice postOffice){
+        
+            this.postOffice = postOffice;
+        }
+        
+        @override
+        public void sendMsg(){
+        
+            System.out.println("I'm posterB and just send msg for Chaoyang.");
+        }
+        
+        @override
+        public void receiveMsg(){
+        
+            System.out.println("I'm posterB and just receive msg from Haidian.");
+        }
+    
+    }
+
+***
+
+    public class Client{
+    
+        public static void main(String[] args){
+        
+            BjPost bjPost = new BjPost();
+        
+            PosterA posterA = new PosterA(bjPost);
+            
+            PosterB posterB = new PosterB(bjPost);
+            
+            bjPost.setSender(posterA);
+            
+            bjPost.setReceiver(posterB);
+            
+            bjPost.send();
+            
+            bjPost.receive();
+        }
+        
+    }
 
     运行结果：
-
-
+    
+        I'm posterA and just send message for district of Haidian.
+        
+        I'm posterB and just receive msg from Haidian.
+       
 
 
 <h3 id="app">应用</h3>
@@ -69,9 +182,9 @@
 相关推荐：[设计模式原则](./Principle)
 
 
-上一篇：[【行为型】状态模式](./State)
+上一篇：[【行为型】访问者模式](./Visitor)
 
-下一篇：[【行为型】中介者模式](./Mediator)
+下一篇：[【行为型】解释模式](./Interpreter)
 
 
 

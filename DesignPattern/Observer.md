@@ -37,7 +37,7 @@
 
 <h3 id="code">代码</h3>
 
-    public abstract Leader{
+    public abstract class Leader{
 
         private ArrayList<Observer> observerList = new ArrayList<Observer>();
 
@@ -63,7 +63,7 @@
 
 ***
 
-    public abstract Observer{
+    public abstract class Observer{
 
         public abstract void do();
     }
