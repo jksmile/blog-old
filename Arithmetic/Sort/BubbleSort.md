@@ -8,6 +8,7 @@
 
 *   [Code](#code)
 
+***
 
 <h3 id="pre">前言</h3>
 
@@ -48,7 +49,8 @@
     | 1 | 2 | 3 | 4 | 5 |
 
 
-<h3 id="code"></h3>
+
+<h3 id="code">Code</h3>
 
 
     public class Demo{
