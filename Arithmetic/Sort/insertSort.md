@@ -98,16 +98,12 @@
         
                     while( j>0 && arr[j-1] > temp ){
                     
-                        arr[j] = arr[j-1];
-                                         
-                        j--;
+                        arr[--j] = arr[j-1];
                     }
                     
                     arr[j] = temp;
                 }
             }
-        
-        
         }
     }
     
