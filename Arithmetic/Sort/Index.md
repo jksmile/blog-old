@@ -10,4 +10,4 @@
 
 *   [【交换排序】快速排序](./QuickSort)
 
-*   [插入排序](./insertSort)
+*   [【插入排序】直接插入排序](./insertSort)
