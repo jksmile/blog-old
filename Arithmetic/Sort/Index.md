@@ -2,10 +2,12 @@
 
 ## 排序算法
 
-*   [选择排序](./SelectSort)
+*   [【选择排序】直接选择排序](./SelectSort)
 
-*   [冒泡排序](./BubbleSort)
+*   [【选择排序】堆排序](./HeapSort)
 
-*   [快速排序](./QuickSort)
+*   [【交换排序】冒泡排序](./BubbleSort)
+
+*   [【交换排序】快速排序](./QuickSort)
 
 *   [插入排序](./insertSort)
