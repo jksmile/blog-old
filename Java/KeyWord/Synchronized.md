@@ -248,7 +248,7 @@ synchronized关键字为了解决同步问题应运而生！synchronized关键�
     
 ***
     
-
+**4. synchronized对static方法中代码块修饰，是类方法级别加锁？还是类级别的加锁？**    
     
     
     public class SynchronizedTest extends Thread{
