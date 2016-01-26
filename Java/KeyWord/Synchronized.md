@@ -1,6 +1,6 @@
 
 
-## Synchronized关键字知多少？
+## Synchronized关键字
 
 *   [前言](#preface)
 
