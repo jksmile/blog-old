@@ -206,77 +206,74 @@
 
 ***
 
-    public class Demo{
+    public class HeapSort{
     
-        public static void main(String[] args){
-            
-           int[] arr = {8,3,6,4,1,2,5,7};
-        
+        public static void main(String[] args) {
+    
+            int[] arr = {8,3,6,4,1,2,5,7};
+    
+            heapSort(arr);
+    
         }
-        
-        
+    
+    
         public static void heapSort(int[] arr){
-            
-            
-        
-        }
-        
-        private static void buildMaxHeap(int[] arr){
-            
-            int lastNode = ((arr.length-1)-1) >> 1;
-            
-            for(int i=lastNode; i>0; i++){
-                
-                maxHeap(arr, arr.length, i);
+    
+            if( arr.length == 0) return;
+    
+            int lastNodeIndex = ((arr.length-1)-1) >> 1;
+    
+    
+            for (int i = lastNodeIndex; i>=0; i--){
+    
+                buildMaxHeap(arr,arr.length,i);
             }
-        }
-        
-        private static void maxHeap(int[] arr, int heapSize, int index){
-            
-            int lastIndex = index;
-            
-            int leftChildIndex = (index << 1) + 1;
-            
-            int rightChildIndex = (index << 1) + 1;
-        
-            if( leftChildIndex < heapSize && arr[leftChildIndex] > arr[index] ){
-                
-                lastIndex = leftChildIndex;
-            }
-            
-            if( rightChildIndex < heapSize && arr[rightChildIndex] > arr[lastIndex] ){
-                
-                lastIndex = rightChildIndex;
-            }
-            
-            if( lastIndex != index){
-            
-                int temp = arr[index]
-                
-                arr[index] = arr[lastIndex];
-                
-                arr[lastIndex] = temp;
-                
-                maxHeap(arr, heapSize, lastIndex);
-            }
-        
-        }
-        
-        
-        private static void sort(int[] arr){
-        
-            for(int i=arr.length-1; i>=0; i++){
-                
+    
+    
+            for(int j = arr.length-1; j>=0; j--){
+    
                 int temp = arr[0];
-                
-                arr[0] = arr[i];
-            
-                arr[i] = temp;
-                
-                maxHeap(arr, i, 0);
+    
+                arr[0] = arr[j];
+    
+                arr[j] = temp;
+    
+                buildMaxHeap(arr,j,0);
             }
-        
+    
         }
-        
+    
+    
+    
+        private static void buildMaxHeap(int[] arr, int heapSize, int nodeIndex){
+    
+            int leftChildIndex = (nodeIndex << 1) + 1;
+    
+            int rightChildIndex = (nodeIndex << 1) + 2;
+    
+            int lastNodeIndex = nodeIndex;
+    
+            if( leftChildIndex < heapSize && arr[lastNodeIndex] < arr[leftChildIndex] ){
+    
+                lastNodeIndex = leftChildIndex;
+            }
+    
+            if( rightChildIndex < heapSize && arr[lastNodeIndex] < arr[rightChildIndex] ){
+    
+                lastNodeIndex = rightChildIndex;
+            }
+    
+            if( nodeIndex != lastNodeIndex){
+    
+                int temp = arr[nodeIndex];
+    
+                arr[nodeIndex] = arr[lastNodeIndex];
+    
+                arr[lastNodeIndex] = temp;
+    
+                buildMaxHeap(arr,heapSize,lastNodeIndex);
+            }
+        }
+    
     }
     
