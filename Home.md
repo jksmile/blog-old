@@ -1,9 +1,6 @@
 
 
 
-## JK's Blog
-
-    
 *   JAVA
 
     *   [Web篇](./Java/web/Index)
