@@ -3,6 +3,7 @@
 ## 【创建型】原型模式
 
 *   [定义](#define)
+*   [UML图](#UML)
 *   [代码](#code)
 *   [应用](#app)
 
@@ -10,6 +11,8 @@
 
 
 <h3 id="define">定义</h3>
+
+***
 
     定义：用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。
 
@@ -32,8 +35,25 @@
         3.若想实现深拷贝，必须在类引用对象类中同样实现Cloneable接口；
     
 
+<h3 id="UML">UML图</h3>
+
+***
+
+     _ _ _ _ _ _       _ _ _ _ _ _ _ _ _ 
+    |           |     |                 |  
+    |  Client   |---->|    Prototype    |
+    |_ _ _ _ _ _|     |    +clone()     |
+                      |_ _ _ _ _ _ _ _ _|
+                               ↑
+                       _ _ _ _ | _ _ _ _ _
+                      |                   |
+                      | concretePrototype |
+                      |_ _ _ _ _ _ _ _ _ _| 
+                        
+                        
 <h3 id="code">代码</h3>
 
+***
 
     public class Prototype implements Cloneable{
 
@@ -75,7 +95,12 @@
 
 <h3 id="app">应用</h3>
 
+***
 
+**JDK中原型模式的的应用：**
+
+
+java.lang.Object#clone()
 
 
 
