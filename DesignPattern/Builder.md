@@ -3,6 +3,7 @@
 ## 【创建型】建造者模式
 
 *   [定义](#define)
+*   [UML图](#UML)
 *   [代码](#code)
 *   [应用](#app)
 
@@ -10,6 +11,8 @@
 
 
 <h3 id="define">定义</h3>
+
+***
 
     定义：将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
 
@@ -25,7 +28,32 @@
         2.扩展性好，有新的需求，加入新的建造者即可；
 
 
+<h3 id="UML">UML图</h3>
+
+***
+              
+     _ _ _ _ _ _       _ _ _ _ _ _ _ _ _  
+    |           |     |                 | 
+    |  Director |----→| abstractBuilder | 
+    |_ _ _ _ _ _|     |_ _ _ _ _ _ _ _ _| 
+                                ↑
+                       _ _ _ _ _|_ _ _ _         
+                      |                 |
+                      | concreteBuilder |   
+                      |_ _ _ _ _ _ _ _ _|
+                                |
+                                | 
+                       _ _ _ _ _↓_ _ _ _
+                      |                 |
+                      |     Product     |
+                      |_ _ _ _ _ _ _ _ _| 
+
+                        
+                        
 <h3 id="code">代码</h3>
+
+***
+
 
     public class ComputerProduct{
 
@@ -131,7 +159,20 @@
 
 <h3 id="app">应用</h3>
 
+***
 
+**JDK中建造者模式的的应用：**
+
+java.lang.StringBuilder#append()
+
+java.lang.StringBuffer#append()
+
+java.sql.PreparedStatement
+
+javax.swing.GroupLayout.Group#addComponent()
+
+
+Todo.
 
 
 
