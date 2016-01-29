@@ -4,6 +4,8 @@
 
 ***
 
+<div id="JK">
+
 <img src="/Resource/2016/jk.png" width="135px" id="imgJK"/>
 
 <pre id="infoJK">
@@ -16,7 +18,9 @@ Contact: xjksmile@gmail.com
 Hobby: Swimming、Guitar.    
 </code>
 </pre>
-    
+
+</div>
+
 ### Statement
 
 ***
