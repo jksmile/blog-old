@@ -5,10 +5,11 @@
 ***
 
 <div>
-
-<img src="/Resource/2016/jk.png" width="120px" style="float:left; margin-top:15px;" />
-
-<pre style="float:left; margin-left:10px; width:75%;"><code>
+<div style="float:left; margin-top:15px;">
+<img src="/Resource/2016/jk.png" width="120px" />
+</div>
+<div style="float:left; margin-left:10px; width:75%;">
+<pre><code>
     Name: Jinkai.Xu
     
     Desc: Just a coder.
@@ -17,7 +18,7 @@
     
     Hobby: Swimming、Guitar.    
 </code></pre>
-
+</div>
 </div>
     
 ### Statement
