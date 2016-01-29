@@ -7,13 +7,13 @@
 <img src="/Resource/2016/jk.png" width="120px" id="imgJK"/>
 
 <pre id="infoJK"><code>
-    Name: Jinkai.Xu
+Name: Jinkai.Xu
+
+Desc: Just a coder.
     
-    Desc: Just a coder.
-        
-    Contact: xjksmile@gmail.com
-    
-    Hobby: Swimming、Guitar.    
+Contact: xjksmile@gmail.com
+
+Hobby: Swimming、Guitar.    
 </code></pre>
     
 ### Statement
