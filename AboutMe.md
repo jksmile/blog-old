@@ -4,11 +4,10 @@
 
 ***
 
-<img src="/Resource/2016/jk.png" width="120px" id="imgJK"/>
+<img src="/Resource/2016/jk.png" width="140px" id="imgJK"/>
 
 <pre id="infoJK">
-<code>
-Name: Jinkai.Xu
+<code>Name: Jinkai.Xu
 
 Desc: Just a coder.
     
