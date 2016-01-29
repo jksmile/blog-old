@@ -4,22 +4,21 @@
 
 ***
 
-<p style="float:left; width:15%;">
-<img src="/Resource/2016/jk.png" width="120px" style="float:left;" />
-</p>
+<div>
 
-<pre style="width:75%;float:left;margin-left:10px;">
-<code>
-Name: Jinkai.Xu
+<img src="/Resource/2016/jk.png" width="120px" style="float:left; margin-top:15px;" />
 
-Desc: Just a coder.
+<pre style="float:left; margin-left:10px; width:75%;"><code>
+    Name: Jinkai.Xu
     
-Contact: xjksmile@gmail.com
+    Desc: Just a coder.
+        
+    Contact: xjksmile@gmail.com
+    
+    Hobby: Swimming、Guitar.    
+</code></pre>
 
-Hobby: Swimming、Guitar.    
-</code>
-</pre>
-
+</div>
     
 ### Statement
 
