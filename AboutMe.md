@@ -2,19 +2,27 @@
 
 ### Who am i?
 
-    Name: Jinkai.Xu
+***
 
-    Desc: Just a coder.
+<img src="/Resource/2016/jk.png" style="width:15%;float:left;margin-top:15px;" />
+
+<pre style="width:75%;float:left;margin-left:10px;">
+<code>
+Name: Jinkai.Xu
+
+Desc: Just a coder.
     
-    Contact: xjksmile@gmail.com
+Contact: xjksmile@gmail.com
+
+Hobby: Swimming、Guitar.
+
+</code>
+</pre>
+
     
-    
-### Hobby
-
-    Swimming、Guitar.
-
-
 ### Statement
+
+***
 
     Writing tech blog just for learning more
 
@@ -25,6 +33,8 @@
     
 
 ### Powered
+
+***
 
     Github Gollum Markdown
 
