@@ -4,7 +4,9 @@
 
 ***
 
+<p style="float:left; width:15%;">
 <img src="/Resource/2016/jk.png" width="120px" style="float:left;" />
+</p>
 
 <pre style="width:75%;float:left;margin-left:10px;">
 <code>
