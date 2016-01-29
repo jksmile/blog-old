@@ -3,6 +3,7 @@
 ## 【创建型】工厂方法模式
 
 *   [定义](#define)
+*   [UML图](#UML)
 *   [代码](#code)
 *   [应用](#app)
 
@@ -10,6 +11,9 @@
 
 
 <h3 id="define">定义</h3>
+
+***
+
 
     定义：一抽象产品类派生出多个具体产品类；一抽象工厂类派生出多个具体工厂类；每个具体工厂类只能创建一个具体产品类的实例。
 
@@ -23,7 +27,26 @@
         3.工厂实现，工厂实现负责如何实例化产品类，每个具体工厂实例化一具体产品类；
 
 
+
+<h3 id="UML">UML图</h3>
+
+***
+
+     _ _ _ _ _ _       _ _ _ _ _ _  
+    |           |     |           | 
+    | IFactory  |     | IProduct  | 
+    |_ _ _ _ _ _|     |_ _ _ _ _ _|       
+          ↑                 ↑
+          |                 |
+     _ _ _|_ _ _       _ _ _|_ _ _  
+    |           |     |           | 
+    |  Factory  |----→|  Product  | 
+    |_ _ _ _ _ _|     |_ _ _ _ _ _|       
+            
+
 <h3 id="code">代码</h3>
+
+***
 
     public interface Product{
 
@@ -108,6 +131,45 @@
 
 <h3 id="app">应用</h3>
 
+***
+
+**JDK中java.lang.String/Boolean/Long/Double/Float等类中valueOf()就是工厂方法模式的的应用：**
+
+    package java.lang;
+    
+    import java.io.ObjectStreamField;
+    import java.io.UnsupportedEncodingException;
+    import java.nio.charset.Charset;
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.Comparator;
+    import java.util.Formatter;
+    import java.util.Locale;
+    import java.util.regex.Matcher;
+    import java.util.regex.Pattern;
+    import java.util.regex.PatternSyntaxException;
+        
+    public final class String
+        implements java.io.Serializable, Comparable<String>, CharSequence {
+        
+        
+        ......
+        
+
+        public static String valueOf(Object obj) {
+            return (obj == null) ? "null" : obj.toString();
+        }
+    
+        public static String valueOf(char data[]) {
+            return new String(data);
+        }
+    
+        public static String valueOf(char data[], int offset, int count) {
+            return new String(data, offset, count);
+        }
+
+        ......
+    }        
 
 
 
