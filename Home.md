@@ -3,8 +3,6 @@
 
 ## JK's Blog
 
-    Enjoy Life Enjoy Tech.
-    
     
 *   JAVA
 
