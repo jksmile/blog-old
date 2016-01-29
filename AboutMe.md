@@ -4,7 +4,7 @@
 
 ***
 
-<img src="/Resource/2016/jk.png" width="140px" id="imgJK"/>
+<img src="/Resource/2016/jk.png" width="135px" id="imgJK"/>
 
 <pre id="infoJK">
 <code>Name: Jinkai.Xu
