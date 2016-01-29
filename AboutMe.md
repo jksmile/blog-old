@@ -4,7 +4,7 @@
 
 ***
 
-<img src="/Resource/2016/jk.png" style="width:15%;float:left;margin-top:15px;" />
+<img src="/Resource/2016/jk.png" width="120px" style="float:left;" />
 
 <pre style="width:75%;float:left;margin-left:10px;">
 <code>
@@ -14,8 +14,7 @@ Desc: Just a coder.
     
 Contact: xjksmile@gmail.com
 
-Hobby: Swimming、Guitar.
-
+Hobby: Swimming、Guitar.    
 </code>
 </pre>
 
