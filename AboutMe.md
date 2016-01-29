@@ -6,7 +6,7 @@
 
 <div id="JK">
 
-<img src="/Resource/2016/jk.png" width="135px" id="imgJK"/>
+<img src="/Resource/2016/jk.png" height="170px" id="imgJK"/>
 
 <pre id="infoJK">
 <code>Name: Jinkai.Xu
