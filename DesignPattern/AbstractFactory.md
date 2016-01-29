@@ -170,7 +170,53 @@
 
 <h3 id="app">应用</h3>
 
+***
 
+**JDK中抽象工厂模式的的应用：**
+
+• java.util.Calendar#getInstance()
+
+• java.util.Arrays#asList()
+
+• java.util.ResourceBundle#getBundle()
+
+• java.net.URL#openConnection()
+
+• java.sql.DriverManager#getConnection()
+
+• java.sql.Connection#createStatement()
+
+• java.sql.Statement#executeQuery()
+
+• java.text.NumberFormat#getInstance()
+
+• java.lang.management.ManagementFactory (所有getXXX()方法)
+
+• java.nio.charset.Charset#forName()
+
+• javax.xml.parsers.DocumentBuilderFactory#newInstance()
+
+• javax.xml.transform.TransformerFactory#newInstance()
+
+• javax.xml.xpath.XPathFactory#newInstance()
+
+
+
+
+**Arrays#asList()**
+
+    
+    public class Arrays{
+        
+        .....
+        
+        public static <T> List<T> asList(T... a) {
+            return new ArrayList<>(a);
+        }
+
+        ......
+        
+    }
 
 
 
