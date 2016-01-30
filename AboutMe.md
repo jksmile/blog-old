@@ -8,7 +8,7 @@
 
 
 <div id="imgJK">
-<img src="/Resource/2016/jk.png" height="170px" />
+<img src="/Resource/2016/yzb.png" height="170px" />
 </div>
 
 <pre id="infoJK">
