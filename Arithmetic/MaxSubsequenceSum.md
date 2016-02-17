@@ -33,40 +33,33 @@
 <h4 id="ArithmeticA-Code">代码</h4> 
 
 
-      1 
-      2         public class MaxSubSequenceSum1{
-      3 
-      4                 public static int methodN2(int[] arr){
-      5 
-      6                         int result=0;
-      7 
-      8                         for(int i=0; i<arr.length; i++){
-      9 
-     10                                 int tmp = 0;
-     11                                 
-     12                                 for(int j=i; j<arr.length; j++){
-     13                                         
-     14                                         tmp += arr[j]; 
-     15                                         
-     16                                         if(tmp > result){
-     17                                                 
-     18                                                 result = tmp;
-     19                                         }
-     20                                 }
-     21                         }
-     22                         
-     23                         return result;
-     24                 }
-     25                 
-     26                 
-     27                 public static void main(String[] args){
-     28                         
-     29                         int[] arr = {1,-8,2,-1,5,-4,-3,4};
-     30                         
-     31                         methodN3(arr);
-     32                 }
-     33         }
-     34 
+
+    public class MaxSubSequenceSum1 {
+
+        public static int methodN2(int[] arr) {
+
+            int result = 0;
+
+            for (int i = 0; i < arr.length; i++) {
+
+                int tmp = 0;
+
+                for (int j = i; j < arr.length; j++) {
+
+                    tmp += arr[j];
+
+                    if (tmp > result) {
+
+                        result = tmp;
+                    }
+                }
+            }
+
+            return result;
+        }
+
+    }
+
 
      
 <h4 id="ArithmeticA-O">时间复杂度</h4> 
