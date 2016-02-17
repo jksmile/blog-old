@@ -1,6 +1,8 @@
 
 ##算法篇索引
 
+*   [最大子序列和三种算法对比](./MaxSubsequenceSum)
+
 *   [判断两二叉树是否相同](./JudgeSameTree)
 
 *   [智者夺魁游戏](./GeniusWin)
