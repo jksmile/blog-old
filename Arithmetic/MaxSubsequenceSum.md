@@ -3,24 +3,24 @@
 ##最大子序列和的三种算法
 
 
-*   [1.算法一](#ArithmeticA)
+*   [算法一](#ArithmeticA)
     *   [分析](#ArithmeticA-Analysis)
     *   [代码](#ArithmeticA-Code)
     *   [时间复杂度](#ArithmeticA-O)
-*   [2.算法二](#ArithmeticB)
+*   [算法二](#ArithmeticB)
     *   [分析](#ArithmeticB-Analysis)
     *   [代码](#ArithmeticB-Code)
     *   [时间复杂度](#ArithmeticB-O)
-*   [3.算法三](#ArithmeticC)
+*   [算法三](#ArithmeticC)
     *   [分析](#ArithmeticC-Analysis)
     *   [代码](#ArithmeticC-Code)
     *   [时间复杂度](#ArithmeticC-O)
 
 ------
 
-<h3 id="ArithmeticA">1.算法一</h3>
+<h3 id="ArithmeticA" class="red">●算法一</h3>
 
-<h4 id="ArithmeticA-Analysis"><span style="color:blue">●</span>分析</h4>
+<h4 id="ArithmeticA-Analysis" class="blue">○分析</h4>
 
 
     示例序列X： 【1,-8,2,-1,5,-4,-3,4】
@@ -30,7 +30,7 @@
 如何找到序列Y的？最笨的方法莫过于两层循环对比
 
 
-<h4 id="ArithmeticA-Code"><span style="color:blue">●</span>代码</h4> 
+<h4 id="ArithmeticA-Code" class="blue">○代码</h4> 
 
 
 
@@ -62,7 +62,7 @@
 
 
      
-<h4 id="ArithmeticA-O"><span style="color:blue">●</span>时间复杂度</h4> 
+<h4 id="ArithmeticA-O" class="blue">○时间复杂度</h4> 
 
      
 忽略初始化参数的单元时间，考虑长度为N的序列嵌套FOR循环： 
@@ -81,10 +81,10 @@
 -----
 
 
-<h3 id="ArithmeticB">2.算法二</h3>
+<h3 id="ArithmeticB" class="red">●算法二</h3>
 
 
-<h4 id="ArithmeticB-Analysis"><span style="color:blue">●</span>分析</h4>
+<h4 id="ArithmeticB-Analysis" class="blue">○分析</h4>
 
     示例序列X： 【1,-8,2,-1,5,-4,-3,4】
     
@@ -106,7 +106,7 @@
 所以在序列X中最大子序列是包含前、后两部分的元素，和为6。
 
 
-<h4 id="ArithmeticB-Code"><span style="color:blue">●</span>代码</h4>
+<h4 id="ArithmeticB-Code" class="blue">○代码</h4>
 
     public class MaxSubSequenceSum{
 
@@ -162,7 +162,7 @@
 
 
 
-<h4 id="ArithmeticB-O"><span style="color:blue">●</span>时间复杂度</h4>
+<h4 id="ArithmeticB-O" class="blue">○时间复杂度</h4>
 
 对于长度为N的序列，利用算法二需要的时间主要是递归两行代码。
 
@@ -186,9 +186,9 @@ T(8) = 32 = 8 * 4
 
 ------
 
-<h3 id="ArithmeticC">3.算法三</h3>
+<h3 id="ArithmeticC" class="red">●算法三</h3>
 
-<h4 id="ArithmeticC-Analysis"><span style="color:blue">●</span>分析</h4>
+<h4 id="ArithmeticC-Analysis" class="blue">○分析</h4>
 
 算法三是聪明算法的典型，是算法一的改进！
 
@@ -197,7 +197,7 @@ T(8) = 32 = 8 * 4
 最大子序列的起点不可能是负数，即任何负的子序列不可能是最优子序列的前缀，所以遇到负的序列就可以放弃掉，从重开始找大于当前序列和的序列
 
 
-<h4 id="ArithmeticC-Code"><span style="color:blue">●</span>代码</h4>
+<h4 id="ArithmeticC-Code" class="blue">○代码</h4>
 
     public class MaxSubSequenceSum{
 
@@ -225,7 +225,7 @@ T(8) = 32 = 8 * 4
     }
 
 
-<h4 id="ArithmeticC-O"><span style="color:blue">●</span>时间复杂度</h4>
+<h4 id="ArithmeticC-O" class="blue">○时间复杂度</h4>
 
 算法三的时间复杂度不用钛合金狗眼都知道 T(N) = O(N)
 
