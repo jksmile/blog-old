@@ -2,14 +2,14 @@
 
 ##生活杂记
 
-*   [徐静伊一周岁成长记](./xjy)
+*   [【生活】徐静伊一周岁成长记](./xjy)
 
-*   [信仰](./music-faith)
+*   [【音乐】信仰](./music-faith)
 
-*   [同学聚会的意义](./20160216-BestTime)
+*   [【转载】同学聚会的意义](./20160216-BestTime)
 
-*   [贝尔加湖畔](./music-BaikalLake)
+*   [【音乐】贝尔加湖畔](./music-BaikalLake)
 
-*   [追梦人](./music-Dreamer)
+*   [【音乐】追梦人](./music-Dreamer)
 
-*   [勿勿那年](./music-ThatFleeingYear)
+*   [【音乐】勿勿那年](./music-ThatFleeingYear)
