@@ -1,7 +1,7 @@
 
 
-最大子序列和三种算法对比
-====================
+##最大子序列和的三种算法
+
 
 *   [算法一](#ArithmeticA)
     *   [分析](#ArithmeticA-Analysis)
@@ -18,9 +18,9 @@
 
 ------
 
-<h3 id="ArithmeticA">算法一</h3>
+<h3 id="ArithmeticA" class="redJK">●算法一</h3>
 
-<h4 id="ArithmeticA-Analysis">分析</h4>
+<h4 id="ArithmeticA-Analysis" class="blue">○分析</h4>
 
 
     示例序列X： 【1,-8,2,-1,5,-4,-3,4】
@@ -30,7 +30,7 @@
 如何找到序列Y的？最笨的方法莫过于两层循环对比
 
 
-<h4 id="ArithmeticA-Code">代码</h4> 
+<h4 id="ArithmeticA-Code" class="blueJK">○代码</h4> 
 
 
 
@@ -62,7 +62,7 @@
 
 
      
-<h4 id="ArithmeticA-O">时间复杂度</h4> 
+<h4 id="ArithmeticA-O" class="blueJK">○时间复杂度</h4> 
 
      
 忽略初始化参数的单元时间，考虑长度为N的序列嵌套FOR循环： 
@@ -81,10 +81,10 @@
 -----
 
 
-<h3 id="ArithmeticB">算法二</h3>
+<h3 id="ArithmeticB" class="redJK">●算法二</h3>
 
 
-<h4 id="ArithmeticB-Analysis">分析</h4>
+<h4 id="ArithmeticB-Analysis" class="blueJK">○分析</h4>
 
     示例序列X： 【1,-8,2,-1,5,-4,-3,4】
     
@@ -106,7 +106,7 @@
 所以在序列X中最大子序列是包含前、后两部分的元素，和为6。
 
 
-<h4 id="ArithmeticB-Code">代码</h4>
+<h4 id="ArithmeticB-Code" class="blueJK">○代码</h4>
 
     public class MaxSubSequenceSum{
 
@@ -162,7 +162,7 @@
 
 
 
-<h4 id="ArithmeticB-O">时间复杂度</h4>
+<h4 id="ArithmeticB-O" class="blueJK">○时间复杂度</h4>
 
 对于长度为N的序列，利用算法二需要的时间主要是递归两行代码。
 
@@ -186,9 +186,9 @@ T(8) = 32 = 8 * 4
 
 ------
 
-<h3 id="ArithmeticC">算法三</h3>
+<h3 id="ArithmeticC" class="redJK">●算法三</h3>
 
-<h4 id="ArithmeticC-Analysis">分析</h4>
+<h4 id="ArithmeticC-Analysis" class="blueJK">○分析</h4>
 
 算法三是聪明算法的典型，是算法一的改进！
 
@@ -197,7 +197,7 @@ T(8) = 32 = 8 * 4
 最大子序列的起点不可能是负数，即任何负的子序列不可能是最优子序列的前缀，所以遇到负的序列就可以放弃掉，从重开始找大于当前序列和的序列
 
 
-<h4 id="ArithmeticC-Code">代码</h4>
+<h4 id="ArithmeticC-Code" class="blueJK">○代码</h4>
 
     public class MaxSubSequenceSum{
 
@@ -225,7 +225,7 @@ T(8) = 32 = 8 * 4
     }
 
 
-<h4 id="ArithmeticC-O">时间复杂度</h4>
+<h4 id="ArithmeticC-O" class="blueJK">○时间复杂度</h4>
 
 算法三的时间复杂度不用钛合金狗眼都知道 T(N) = O(N)
 
