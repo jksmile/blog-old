@@ -19,17 +19,7 @@
 
 *   [零后置，保持数字相对排序](./ZeroLast)
 
-*   [【选择排序】直接选择排序](./Sort/SelectSort)
-
-*   [【分配排序】基数排序](./Sort/RadixSort)
-
-*   [【选择排序】堆排序](./Sort/HeapSort)
-
-*   [【交换排序】冒泡排序](./Sort/BubbleSort)
-
-*   [【交换排序】快速排序](./Sort/QuickSort)
-
-*   [【插入排序】直接插入排序](./Sort/insertSort)
+<li><p id="blue"><a href="./Sort/Index">常见排序算法</a></p></li>
 
 
 
