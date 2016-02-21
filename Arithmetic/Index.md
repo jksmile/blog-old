@@ -19,7 +19,7 @@
 
 *   [零后置，保持数字相对排序](./ZeroLast)
 
-    <li><p><a href="./Sort/Index" class="blueJK">常见排序算法</a></p></li>
+*   [常见排序算法](./Sort/Index)
 
 
 
