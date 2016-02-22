@@ -4,7 +4,7 @@
 
 *   [【生活】徐静伊一周岁成长记](./xjy)
 
-*   [【转载】职场总结](./Job/PerfectSelf)
+*   [【转载】职场总结](/Job/PerfectSelf)
 
 *   [【音乐】信仰](./music-faith)
 
