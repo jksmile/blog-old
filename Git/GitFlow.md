@@ -8,21 +8,21 @@
 
 ---
 
-*   [git flow是什么](#what-is-git-flow)
+*   [1.git flow是什么](#what-is-git-flow)
 
-*   [git flow中的分支](#git-flow-branch)
+*   [2.git flow中的分支](#git-flow-branch)
 
     *   [git flow主分支](#index-branch)
 
     *   [git flow辅助分支](#assist-branch)
 
-*   [git flow意义在哪里](#git-flow-todo)
+*   [3.git flow意义在哪里](#git-flow-todo)
 
-*   [开发人员使用场景](#inAction)
+*   [4.开发人员使用场景](#inAction)
 
 ---
 
-<h3 id="what-is-git-flow" class="blueJK">git flow是什么</h3>
+<h3 id="what-is-git-flow" class="blueJK">1.git flow是什么</h3>
 
 Git Flow是构建在Git之上的一个组织软件开发活动的模型，是在Git之上构建的一项软件开发最佳实践。
 
@@ -47,7 +47,7 @@ Git Flow是一套使用Git进行源代码管理时的一套行为规范和简化
 
 ---
 
-<h3 id="git-flow-branch" class="blueJK">Git Flow中的分支</h3>
+<h3 id="git-flow-branch" class="blueJK">2.Git Flow中的分支</h3>
 
 Git Flow模型中定义了主分支和辅助分支两类分支。其中主分支用于组织与软件开发、部署相关的活动；
 
@@ -153,7 +153,7 @@ Git Flow模型中定义了主分支和辅助分支两类分支。其中主分支
 
 ---
 
-<h3 id="git-flow-todo" class="blueJK">git flow意义在哪里</h3>
+<h3 id="git-flow-todo" class="blueJK">3.git flow意义在哪里</h3>
 Git Flow开发模型从源代码管理角度对通常意义上的软件开发活动进行了约束。应该说，为我们的软件开发提供了一个可供参考的
 
 管理模型。Git Flow开发模型让nvie的开发代码仓库保持整洁，让小组各个成员之间的开发相互隔离，能够有效避免处于开发状态
@@ -163,7 +163,7 @@ Git Flow开发模型从源代码管理角度对通常意义上的软件开发活
 
 ---
 
-<h3 id="inAction" class="blueJK">开发人员常用的场景</h3>
+<h3 id="inAction" class="blueJK">4.开发人员常用的场景</h3>
 
 **完成常规项目中的功能**
 
