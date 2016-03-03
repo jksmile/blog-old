@@ -10,7 +10,7 @@
 *   [5.实践分析](#do)
 
 
-<h3 id="preface" class="blue">1.前言</h3>
+<h3 id="preface" class="blueJK">1.前言</h3>
 
 前几天在一篇微信公众号【算法与数据结构】上看到一篇关于[算法时间复杂度分析基础](http://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=402653548&idx=1&sn=a19e559974f6a6c9b81b8609df4970aa&scene=23&srcid=0303pIe4zSpi2SvQu4YdvN4j#rd)的文章，写的比较基础但却不通透。
 
@@ -20,7 +20,7 @@
 ---
 
 
-<h3 id="mathBase" class="blue">2.数学基础</h3>
+<h3 id="mathBase" class="blueJK">2.数学基础</h3>
 
 我们常常说哪种算法好，说的是对于大量数据计算时算法的相对增长率较小，直白的说就是在最短时间内给出结果。
 
@@ -43,7 +43,7 @@ C. 指数函数 2^N
 
 ---
 
-<h3 id="timeDefine" class="blue">3.时间复杂度定义</h3>
+<h3 id="timeDefine" class="blueJK">3.时间复杂度定义</h3>
 
 一般我们用T(N)来表示时间复杂度，T(N)的只是表示一个级别，并不是真正的精确表示某个算法的时间复杂度，这个后面我们具体来说，先来说一说T(N)的几个定义。
 
@@ -93,7 +93,7 @@ C. 指数函数 2^N
 
 
 
-<h3 id="do" class="blue">4.实践分析</h3>
+<h3 id="do" class="blueJK">4.实践分析</h3>
 
 
 **Code Demo**
