@@ -60,7 +60,7 @@ awk目前有4个不同版本: awk、nawk、mawk和gawk，awk一般指gawk，gawk
 
 <h3 class="blueJK" id="grammar">2.语法</h3>
 
-awk可以通过man看一下awk的一些内置变量，通过设置内置变量用来改变环境信息:
+awk可以通过man看一下awk的一些内置变量:
 
     Variable names with special meanings:
     
@@ -111,16 +111,49 @@ awk可以通过man看一下awk的一些内置变量，通过设置内置变量�
 
 
 
+**For example:**
 
-            
-            
+    [web@AY131126170354435ec9Z test]$ less A-access.log
+    42.62.36.167--[16/Mar/2014:21:35:34]--"GET--/forum.php?mod=forumdisplay&fid=40&filter=heat&orderby=heats--HTTP/1.1"
+    42.62.36.167--[16/Mar/2014:21:35:39]--"GET--/forum.php?mod=forumdisplay&fid=51&filter=typeid&typeid=1--HTTP/1.1"
+    118.72.253.80--[16/Mar/2014:21:35:40]--"GET--/forum.php--HTTP/1.1"
+    42.62.36.167--[16/Mar/2014:21:35:44]--"GET--/forum.php?mod=misc&action=postreview&do=against&tid=146&pid=327&hash=3cb1b968--HTTP/1.1"
+    42.62.36.167--[16/Mar/2014:21:35:49]--"GET--/forum.php?mod=forumdisplay&fid=103&filter=heat&orderby=heats--HTTP/1.1"
+    42.62.36.167--[16/Mar/2014:21:35:54]--"GET--/forum.php?mod=misc&action=postreview&do=support&tid=194&pid=479&hash=36420ed8--HTTP/1.1"
+    42.62.36.167--[16/Mar/2014:21:35:59]--"GET--/forum.php?mod=misc&action=postreview&do=support&tid=73&pid=385&hash=63a632b3--HTTP/1.1"
+    5.10.83.48--[16/Mar/2014:21:36:39]--"GET--/home.php?mod=space&uid=44&do=friend&view=me--HTTP/1.1"--1290
+    66.249.75.237--[16/Mar/2014:21:36:50]--"GET--/thread-105-1-1.html--HTTP/1.1"
+    66.249.75.231--[16/Mar/2014:21:40:12]--"GET--/thread-110-1-1.html--HTTP/1.1"
+
+    [web@AY131126170354435ec9Z test]$ awk -F "--" '{print "fileName:" FILENAME "\t" "lineNumber:" NR "\t" "columnNum:" NF}'  A-access.log
+    fileName:A-access.log   lineNumber:1    columnNum:5
+    fileName:A-access.log   lineNumber:2    columnNum:5
+    fileName:A-access.log   lineNumber:3    columnNum:5
+    fileName:A-access.log   lineNumber:4    columnNum:5
+    fileName:A-access.log   lineNumber:5    columnNum:5
+    fileName:A-access.log   lineNumber:6    columnNum:5
+    fileName:A-access.log   lineNumber:7    columnNum:5
+    fileName:A-access.log   lineNumber:8    columnNum:5
+    fileName:A-access.log   lineNumber:9    columnNum:5
+    fileName:A-access.log   lineNumber:10   columnNum:5
+    [web@AY131126170354435ec9Z test]$
+
 
 ***
 
 
 <h3 class="blueJK" id="action">3.实践</h3>
 
+**统计记录总行数**
+
+    [web@AY131126170354435ec9Z test]$ awk '{count++} END {print "lineSum:" count}' A-access.log
+    lineSum:10
+
+    -------------------------------
+    Todo: count为自定义变量【强大不？】
+
 **查看访问的IP**
+
 
 $0表示当前行所有域，$1表示当前行第一个域，$2表示当前行第二个域...
 
