@@ -43,7 +43,7 @@ awk目前有4个不同版本: awk、nawk、mawk和gawk，awk一般指gawk，gawk
 
     1. 命令行方式
     
-        localhost:~root$ awk '{commands}' target-file
+        [web@AY131126170354435ec9Z test]$ awk '{commands}' target-file
         
         
     2. shell脚本方式
