@@ -208,5 +208,6 @@ double类型，占8字节，共64位，从高位到低位【左->右】分别划
 <h3 id="summary" class="blueJK">3.总结</h3>
 
 
+看JDK源码是了解相关类机制的最可信方式！
 
 Waiting for update.
