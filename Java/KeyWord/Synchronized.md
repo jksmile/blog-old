@@ -2,16 +2,16 @@
 
 ## Synchronized关键字
 
-*   [前言](#preface)
+*   [1.前言](#preface)
 
-*   [分析](#analyzed)
+*   [2.分析](#analyzed)
 
-*   [总结](#summary)
-
-
+*   [3.总结](#summary)
 
 
-<h3 id="preface">前言</h3>
+
+
+<h3 id="preface" class="blueJK">1.前言</h3>
 
 ***
 
@@ -32,7 +32,7 @@ synchronized关键字为了解决同步问题应运而生！synchronized关键�
 4. synchronized对static方法中代码块修饰，是类方法级别加锁？还是类级别的加锁？
 
 
-<h3 id="analyzed">分析</h3>
+<h3 id="analyzed" class="blueJK">2.分析</h3>
 
 ***
 
@@ -327,7 +327,7 @@ synchronized关键字为了解决同步问题应运而生！synchronized关键�
 ***
 
 
-<h3 id="summary">总结</h3>
+<h3 id="summary" class="blueJK">3.总结</h3>
 
 ***
 
