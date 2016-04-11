@@ -1,10 +1,7 @@
 
 
 
-*   JAVA
-
-    *   [Web篇](./Java/web/Index)
-    *   [JVM篇](./Java/jvm/Index)
+*   [JAVA](./Java/Index)
 
 *   [MySQL篇](./MySQL/Index)
     
