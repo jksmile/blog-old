@@ -97,8 +97,21 @@ MySQL Git Repository: [https://github.com/mysql/mysql-server](https://github.com
 3.删除mysql.user表中的无密码用户：
   
     DELETE FROM mysql.user where PASSWORD='';
-  
-  
+
+
+4.如果忘记登陆密码，可以使用mysqld_safe启动跳过权限检查表，无密码登陆后重置：
+
+    //关闭mysql服务
+    service mysqld stop
+
+    //通过mysqld_safe启动服务
+    /usr/local/mysql/bin/mysqld_safe --skip-grant-table &
+
+    //无密码登陆
+    mysql -u root -p
+
+    //设置密码
+    SET PASSWORD 'root'@'localhost' = PASSWORD9'passwordString');
     
 
  
