@@ -3,7 +3,7 @@
 
 *   [什么是事务](#transaction)
 
-*   [实操]($action)
+*   [实操](#action)
 
 ***
 
