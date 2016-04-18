@@ -2,6 +2,10 @@
 
 ##生活杂记
 
+*   [【音乐】相见恨晚](./music-XiangJianHenWan)
+
+*   [【音乐】完美](./music-WanMei)
+
 *   [【生活】徐静伊一周岁成长记](./xjy)
 
 *   [【转载】职场总结](/Job/PerfectSelf)
