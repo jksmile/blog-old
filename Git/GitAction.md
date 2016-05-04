@@ -59,6 +59,9 @@
     # 销毁自己的修改
     git reset --hard
 
+    # 从GIT迁出代码
+    git archive --format zip --output "./output.zip" master -0 
+
 
 <h3 id="fastAction">快捷命令设置</h3>
 
