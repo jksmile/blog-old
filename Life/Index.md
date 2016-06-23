@@ -2,6 +2,8 @@
 
 ##生活杂记
 
+*   [【生活】片刻时光](./JustThink)
+
 *   [【音乐】相见恨晚](./music-XiangJianHenWan)
 
 *   [【音乐】完美](./music-WanMei)
