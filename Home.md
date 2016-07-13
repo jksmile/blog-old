@@ -13,4 +13,7 @@
 
 *   [Markdown篇](./Markdown/Index)
 
-*   [【生活小记】](./Life/Index)
+*   [转载分享](./Share/Index)
+
+*   [生活小记](./Life/Index)
+
