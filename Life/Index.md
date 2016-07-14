@@ -2,7 +2,7 @@
 
 ##生活小记
 
-*   [【生活】片刻时光](./JustThink)
+*   <span class="blueJK">[【生活】片刻时光](./JustThink) </span>
 
 *   [【生活】小时候-完美时光](./PerfectTime)
 
