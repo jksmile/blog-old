@@ -3,17 +3,19 @@
 
 *   [JAVA](./Java/Index)
 
-*   [MySQL篇](./MySQL/Index)
+*   [MySQL](./MySQL/Index)
     
 *   [Git](./Git/Index)
 
-*   [算法](./Arithmetic/Index)
+*   [Algorithm](./Arithmetic/Index)
 
 *   [设计模式](./DesignPattern/Index)
 
-*   [Markdown篇](./Markdown/Index)
+*   [Markdown](./Markdown/Index)
 
 *   [转载分享](./Share/Index)
 
 *   [生活小记](./Life/Index)
+
+
 
