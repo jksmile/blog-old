@@ -93,7 +93,7 @@
 
         private Car car;
 
-        public Bridge(Car car){
+        public CarCompete(Car car){
 
             this.car = car;
         }
