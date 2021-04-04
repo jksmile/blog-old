@@ -106,7 +106,7 @@
     git init
 
     #添加文件至git管理  【git add . 表示当前目录下所有文件】
-    git add /path/to/file
+    git add /path/to/file 
 
     #提交添加的文件
     git commit -m "first commit"
