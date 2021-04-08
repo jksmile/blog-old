@@ -38,8 +38,7 @@
     
         public static void main(String[] args) {
     
-            int[][] dMatrix={
-                                 {0,5,5,4,MAX,MAX,MAX,MAX,MAX,MAX,MAX,MAX},
+            int[][] dMatrix={{0,5,5,4,MAX,MAX,MAX,MAX,MAX,MAX,MAX,MAX},
                                  {5,0,MAX,MAX,MAX,MAX,MAX,MAX,3,5,MAX,MAX},
                                  {5,MAX,0,MAX,1,5,MAX,MAX,MAX,MAX,MAX,MAX},
                                  {4,MAX,MAX,0,2,MAX,MAX,MAX,3,MAX,MAX,MAX},
@@ -50,8 +49,7 @@
                                  {MAX,3,MAX,3,MAX,MAX,MAX,MAX,0,MAX,2,MAX},
                                  {MAX,5,MAX,MAX,MAX,MAX,MAX,MAX,MAX,0,3,10},
                                  {MAX,MAX,MAX,MAX,MAX,MAX,1,MAX,2,3,0,1},
-                                 {MAX,MAX,MAX,MAX,MAX,MAX,MAX,10,MAX,10,1,0}
-                             };
+                                 {MAX,MAX,MAX,MAX,MAX,MAX,MAX,10,MAX,10,1,0}};
     
             dijkstra(dMatrix,0);
     
